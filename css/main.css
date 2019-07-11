@@ -1,0 +1,617 @@
+/*global styles*/
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf); }
+
+@font-face {
+  font-family: crimson-text-italic;
+  src: url(../fonts/crimson-text-italic.ttf); }
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+
+a:focus,
+a:active,
+button:focus,
+button:active,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+/*global styles*/
+/*header section*/
+.header-section .navbar {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 2px solid #e6e6e6; }
+  .header-section .navbar .nav-link {
+    color: #151b28;
+    margin-right: 20px;
+    font-size: 16px;
+    font-family: Montserrat-Bold; }
+    .header-section .navbar .nav-link:hover, .header-section .navbar .nav-link.active {
+      color: #d89b64; }
+  .header-section .navbar .navbar-toggler {
+    border: none; }
+
+.header-section_home {
+  background: url(../img/header-bg.png) no-repeat center center/cover; }
+  .header-section_home .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    border-bottom: none; }
+    .header-section_home .navbar .nav-link {
+      color: #fff; }
+  .header-section_home .hamburger-inner {
+    background-color: #fff; }
+    .header-section_home .hamburger-inner:after {
+      background-color: #fff; }
+    .header-section_home .hamburger-inner:before {
+      background-color: #fff; }
+  .header-section_home .hamburger.is-active .hamburger-inner {
+    background-color: #fff; }
+    .header-section_home .hamburger.is-active .hamburger-inner:after {
+      background-color: #fff; }
+    .header-section_home .hamburger.is-active .hamburger-inner:before {
+      background-color: #fff; }
+
+.header-section__carousel-wrap {
+  min-height: 600px; }
+
+.header-section__carousel .card {
+  background: none;
+  border: none;
+  border-radius: 0; }
+  .header-section__carousel .card img {
+    width: 70%; }
+
+.header-section__carousel .owl-nav img {
+  max-width: 90%; }
+
+.header-section__carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 35%;
+  right: 4%;
+  z-index: 300; }
+
+.header-section__carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 35%;
+  left: 4%;
+  z-index: 300; }
+
+/*header section*/
+/*menu section*/
+.menu-section {
+  padding: 100px 0; }
+
+.menu-section__caption {
+  background: url(../img/logo-bg.png) no-repeat center center;
+  background-size: 50%;
+  padding: 30px 0; }
+  .menu-section__caption h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #151b28;
+    font-family: Montserrat-Bold; }
+  .menu-section__caption p {
+    text-align: center;
+    color: #8b909d;
+    font-family: crimson-text-italic;
+    font-size: 16px; }
+
+.menu-section__card {
+  margin: 70px 0;
+  box-shadow: -0.5px 0.5px 15px rgba(9, 9, 9, 0.5); }
+  .menu-section__card img {
+    width: 100%;
+    min-height: 100%; }
+  .menu-section__card > div {
+    width: 50%; }
+
+.menu-section__card-img {
+  overflow: hidden; }
+
+.menu-section__card-text > div {
+  border-bottom: 1px solid #ddd; }
+
+.menu-section__card-text > div:last-child {
+  border-bottom: none; }
+
+.menu-section__card-title {
+  padding: 70px 30px;
+  text-align: center; }
+  .menu-section__card-title h2 {
+    font-family: Montserrat-Bold;
+    margin-bottom: 30px; }
+  .menu-section__card-title p {
+    font-family: crimson-text-italic;
+    color: #8b909d;
+    font-size: 16px; }
+
+.menu-section__card-description {
+  padding: 30px 30px; }
+  .menu-section__card-description h6 {
+    padding-right: 15px;
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    color: #151b29; }
+  .menu-section__card-description p {
+    padding-left: 15px;
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: #8b909d;
+    line-height: 1.9; }
+
+.menu-section__card-price {
+  padding: 30px 30px;
+  text-align: center; }
+  .menu-section__card-price span {
+    color: #829c2c;
+    font-size: 38px;
+    font-family: Montserrat-Bold; }
+  .menu-section__card-price p {
+    font-size: 16px;
+    color: #8b909d;
+    font-family: crimson-text-italic; }
+
+.menu-section_gray-bg {
+  background: -webkit-linear-gradient(top, #fff, #cdcdcd); }
+
+.menu-section__items {
+  margin: 70px 0 30px 0; }
+  .menu-section__items .card {
+    border: none;
+    border-radius: 0;
+    min-height: 100%;
+    transition: all 0.2s; }
+    .menu-section__items .card:hover {
+      box-shadow: -0.5px 0.5px 20px rgba(9, 9, 9, 0.5); }
+    .menu-section__items .card a:hover {
+      text-decoration: none; }
+    .menu-section__items .card .card-body {
+      padding: 3rem 1.5rem; }
+    .menu-section__items .card img {
+      border-radius: 0; }
+    .menu-section__items .card h3 {
+      text-align: center;
+      color: #151b29;
+      font-family: Montserrat-Bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-size: 28px; }
+    .menu-section__items .card p {
+      text-align: center;
+      font-size: 16px;
+      color: #8b909d;
+      font-family: crimson-text-italic; }
+
+.menu-section__item {
+  margin-bottom: 30px; }
+
+/*menu section*/
+/*book table section*/
+.book-table-section {
+  padding: 100px 0; }
+
+.book-table-section__caption {
+  background: url(../img/logo-bg.png) no-repeat center center;
+  background-size: 50%;
+  padding: 30px 0; }
+  .book-table-section__caption h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #151b28;
+    font-family: Montserrat-Bold; }
+  .book-table-section__caption p {
+    text-align: center;
+    color: #8b909d;
+    font-family: crimson-text-italic;
+    font-size: 16px; }
+
+.book-table-section__form {
+  margin: 70px 0 30px 0; }
+  .book-table-section__form .btn {
+    background-color: #d89b64;
+    border: 1px solid #d89b64;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    padding: 1rem .75rem; }
+    .book-table-section__form .btn:active {
+      background-color: #d89b64 !important;
+      border: 1px solid #d89b64 !important; }
+  .book-table-section__form .form-control {
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: -0.5px 0.5px 60px rgba(9, 9, 9, 0.2);
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+    color: #d89b64;
+    font-size: 15px;
+    padding: 1.5rem .75rem;
+    border: 1px solid #fff;
+    transition: all 0.2s; }
+    .book-table-section__form .form-control:focus {
+      box-shadow: -0.5px 0.5px 60px rgba(9, 9, 9, 0.2) !important;
+      background-color: #151b28;
+      border: 1px solid #fff; }
+      .book-table-section__form .form-control:focus::-webkit-input-placeholder {
+        color: #d89b64;
+        font-family: Montserrat-Bold; }
+      .book-table-section__form .form-control:focus::-moz-placeholder {
+        color: #d89b64;
+        font-family: Montserrat-Bold; }
+      .book-table-section__form .form-control:focus:-moz-placeholder {
+        color: #d89b64;
+        font-family: Montserrat-Bold; }
+      .book-table-section__form .form-control:focus:-ms-input-placeholder {
+        color: #d89b64;
+        font-family: Montserrat-Bold; }
+      .book-table-section__form .form-control:focus::placeholder {
+        color: #d89b64;
+        font-family: Montserrat-Bold; }
+    .book-table-section__form .form-control::-webkit-input-placeholder {
+      color: #151b29;
+      font-family: Montserrat-Bold; }
+    .book-table-section__form .form-control::-moz-placeholder {
+      color: #151b29;
+      font-family: Montserrat-Bold; }
+    .book-table-section__form .form-control:-moz-placeholder {
+      color: #151b29;
+      font-family: Montserrat-Bold; }
+    .book-table-section__form .form-control:ms-input-placeholder {
+      color: #151b29;
+      font-family: Montserrat-Bold; }
+    .book-table-section__form .form-control::placeholder {
+      color: #151b29;
+      font-family: Montserrat-Bold; }
+  .book-table-section__form select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 0.5rem 0.75rem !important;
+    height: 49.5px;
+    appearance: none; }
+    .book-table-section__form select:focus {
+      background: url(../img/cross.png) no-repeat;
+      background-position: 98%, 30px !important;
+      background-size: 10px;
+      color: #d89b64 !important; }
+    .book-table-section__form select option {
+      padding: 1.5rem .75rem;
+      color: #d89b64;
+      background-color: #151b28; }
+  .book-table-section__form textarea {
+    resize: none;
+    padding: 1.5rem .75rem; }
+
+.form-control_error {
+  border: 1px solid darkred !important; }
+
+/*book table section*/
+/*perfection section*/
+.perfection-section {
+  padding: 100px 0 70px 0; }
+
+.perfection-section__caption {
+  background: url(../img/logo-bg.png) no-repeat center center;
+  background-size: 50%;
+  padding: 30px 0; }
+  .perfection-section__caption h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #151b28;
+    font-family: Montserrat-Bold; }
+  .perfection-section__caption p {
+    text-align: center;
+    color: #8b909d;
+    font-family: crimson-text-italic;
+    font-size: 16px; }
+
+.perfection-section__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 9, 9, 0.8);
+  transition: all 0.4s; }
+  .perfection-section__text > div {
+    z-index: 100; }
+  .perfection-section__text h2 {
+    font-family: Montserrat-Bold;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #d89b64;
+    transition: all 0.4s; }
+  .perfection-section__text p {
+    color: #fff;
+    font-family: crimson-text-italic;
+    font-size: 16px; }
+  .perfection-section__text hr {
+    border-top: 1px solid #d89b64;
+    width: 10%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem; }
+
+.perfection-section__blocks {
+  margin-top: 70px; }
+  .perfection-section__blocks > div {
+    position: relative;
+    width: 33.33%;
+    overflow: hidden;
+    cursor: pointer; }
+    .perfection-section__blocks > div:hover .perfection-section__text {
+      background: rgba(9, 9, 9, 0); }
+      .perfection-section__blocks > div:hover .perfection-section__text h2 {
+        margin-top: 85%;
+        color: #151b29; }
+      .perfection-section__blocks > div:hover .perfection-section__text p {
+        color: #8b909d; }
+      .perfection-section__blocks > div:hover .perfection-section__text hr {
+        border-top: 1px solid #151b29; }
+  .perfection-section__blocks img {
+    width: 100%;
+    min-height: 100%;
+    transition: all 0.2s; }
+
+.perfection-section__more {
+  padding: 70px 0 0 0; }
+  .perfection-section__more a {
+    display: block;
+    border-bottom: 1px solid #d89b64;
+    text-transform: uppercase;
+    color: #d89b64;
+    font-family: Montserrat-Bold; }
+    .perfection-section__more a:hover {
+      text-decoration: none; }
+
+/*perfection section*/
+/*details section*/
+.details-section {
+  width: 100%;
+  padding: 100px 0;
+  background: url(../img/details-bg.jpg) no-repeat center center/cover;
+  min-height: 500px; }
+  .details-section .card {
+    border-radius: 0;
+    padding: 2rem; }
+    .details-section .card .card-body {
+      border: 1px solid #dcdddf;
+      padding: 3rem 2rem; }
+      .details-section .card .card-body .card-title {
+        text-transform: uppercase;
+        color: #161b29;
+        font-size: 38px;
+        font-family: Montserrat-Bold;
+        margin-bottom: 30px; }
+      .details-section .card .card-body p {
+        color: #8b909d;
+        font-family: crimson-text-italic;
+        font-size: 18px; }
+      .details-section .card .card-body .btn {
+        margin-top: 30px;
+        text-transform: uppercase;
+        color: #d89b64;
+        font-family: Montserrat-Bold;
+        border: 1px solid #dcdddf;
+        border-radius: 0;
+        padding: 1rem 1.2rem;
+        font-size: 16px; }
+        .details-section .card .card-body .btn:hover, .details-section .card .card-body .btn:active {
+          background: none; }
+
+/*details section*/
+/*reach section*/
+.reach-section {
+  padding: 70px 0 100px 0; }
+
+.reach-section__caption {
+  background: url(../img/logo-bg.png) no-repeat center center;
+  background-size: 50%;
+  padding: 30px 0 20px 0; }
+  .reach-section__caption h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #151b28;
+    font-family: Montserrat-Bold; }
+  .reach-section__caption p {
+    text-align: center;
+    color: #8b909d;
+    font-family: crimson-text-italic;
+    font-size: 16px; }
+
+.reach-section__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s; }
+  .reach-section__text > div {
+    z-index: 100; }
+  .reach-section__text h2 {
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #d89b64;
+    transition: all 0.4s; }
+  .reach-section__text p {
+    color: #fff;
+    font-family: crimson-text-italic;
+    font-size: 16px; }
+  .reach-section__text hr {
+    border-top: 1px solid #d89b64;
+    width: 10%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem; }
+
+.reach-section__blocks {
+  margin-top: 70px; }
+  .reach-section__blocks > div {
+    position: relative;
+    width: 33.33%;
+    min-height: 350px;
+    overflow: hidden;
+    cursor: pointer; }
+
+.reach-section__number {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #151b28;
+  text-shadow: 10px 10px 20px #000;
+  z-index: 400; }
+  .reach-section__number h1 {
+    font-size: 150px; }
+
+.reach-section__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 35% auto;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s; }
+  .reach-section__info p {
+    color: #8b909d; }
+  .reach-section__info:hover {
+    background-color: rgba(21, 27, 40, 0.9); }
+    .reach-section__info:hover p {
+      color: #fff; }
+
+/*reach section*/
+/*footer section*/
+.footer-section {
+  position: relative;
+  width: 100%;
+  padding: 0 0 50px 0;
+  border-top: 2px solid #e6e6e6; }
+
+.footer-section__fork {
+  position: relative;
+  background: url(../img/fork-icon.png) no-repeat center center/cover;
+  width: 100px;
+  height: 100px;
+  margin: -50px auto 30px auto; }
+
+.footer-section__caption {
+  margin-bottom: 30px; }
+  .footer-section__caption h6 {
+    text-align: center;
+    color: #161b29;
+    font-family: Montserrat-Bold;
+    font-size: 16px; }
+  .footer-section__caption p {
+    text-align: center;
+    font-family: crimson-text-italic;
+    font-size: 16px;
+    color: #8b909d; }
+
+.footer-section__social-icons {
+  width: 15%;
+  padding: 30px 0;
+  border-top: 2px solid #e6e6e6;
+  margin: 0 auto; }
+  .footer-section__social-icons > div {
+    margin-left: 10px;
+    margin-right: 10px; }
+    .footer-section__social-icons > div img {
+      width: 30px; }
+
+/*footer section*/
+/*media queries*/
+@media (max-width: 991px) {
+  /*header section*/
+  .header-section .navbar .nav-link {
+    margin-right: 0; }
+  .header-section__carousel {
+    margin-top: 40px; }
+  /*header section*/
+  /*menu section*/
+  .menu-section__card > div {
+    width: 100%; }
+  /*menu section*/ }
+
+@media (max-width: 767px) {
+  /*header section*/
+  .header-section__carousel {
+    margin-top: 30px; }
+  /*header section*/
+  /*perfection section*/
+  .perfection-section__blocks {
+    margin-top: 70px; }
+    .perfection-section__blocks > div {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer; }
+      .perfection-section__blocks > div:hover .perfection-section__text {
+        background: rgba(9, 9, 9, 0); }
+        .perfection-section__blocks > div:hover .perfection-section__text h2 {
+          margin-top: 85%;
+          color: #151b29; }
+        .perfection-section__blocks > div:hover .perfection-section__text p {
+          color: #8b909d; }
+        .perfection-section__blocks > div:hover .perfection-section__text hr {
+          border-top: 1px solid #151b29; }
+    .perfection-section__blocks img {
+      width: 100%;
+      min-height: 100%;
+      transition: all 0.2s; }
+  /*perfection section*/
+  /*reach section*/
+  .reach-section__blocks > div {
+    width: 100%; }
+  /*reach section*/ }
+
+@media (max-width: 575px) {
+  /*header section*/
+  .header-section .navbar {
+    padding-left: 0;
+    padding-right: 0; }
+  .header-section__carousel-wrap {
+    min-height: 300px; }
+  .header-section__carousel {
+    margin-top: 30px; }
+    .header-section__carousel .owl-nav img {
+      width: 60%; }
+    .header-section__carousel .owl-nav .owl-next {
+      top: 25%; }
+    .header-section__carousel .owl-nav .owl-prev {
+      top: 25%; }
+  /*header section*/
+  /*menu section*/
+  .menu-section {
+    padding: 30px 0 80px 0; }
+  .menu-section__caption h1 {
+    font-size: 28px; }
+  .menu-section__card {
+    margin: 10px 0; }
+  .menu-section__card-title {
+    padding: 30px 15px 25px 15px; }
+    .menu-section__card-title h2 {
+      margin-bottom: 20px;
+      font-size: 25px; }
+  .menu-section__card-description {
+    padding: 30px 15px 25px 15px; }
+  .menu-section__card-price {
+    padding: 25px 15px; }
+  /*menu section*/
+  /*details section*/
+  .details-section .card .card-body .btn {
+    font-size: 13px; }
+  /*details section*/ }
+
+/*media queries*/

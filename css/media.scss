@@ -1,0 +1,139 @@
+@media (max-width: 991px) {
+	/*header section*/
+	.header-section {
+		.navbar {
+			.nav-link {
+				margin-right: 0;
+			}
+		}
+	}
+	.header-section__carousel {
+		margin-top: 40px;
+	} 
+	/*header section*/ 
+	/*menu section*/
+	.menu-section__card {
+		&>div {
+			width: 100%;
+		}
+	} 
+	/*menu section*/ 
+}
+@media (max-width: 767px) {
+/*header section*/
+.header-section__carousel {
+	margin-top: 30px;
+}   
+/*header section*/ 
+/*perfection section*/
+	.perfection-section__blocks {
+		margin-top: 70px;
+		& > div {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			cursor: pointer;
+			// transition: all 0.2s;
+			&:hover {
+				.perfection-section__text {
+					// animation: slideInDown 0.2s linear 1;
+					// bottom: -80%;
+					background: rgba(9, 9, 9, 0);
+					// margin-bottom: 0;
+					h2 {
+						margin-top: 85%;
+						color: #151b29;
+					}
+					p {
+						color: #8b909d;
+					}
+					hr {
+						border-top: 1px solid #151b29;
+					}
+				}
+			}
+		}
+		img {
+			width: 100%;
+			min-height: 100%;
+			// cursor: pointer;
+			transition: all 0.2s;
+			&:hover {
+				// box-shadow: -0.5px 0.5px 20px rgba(9,9,9,0.5);
+				// transform: translate(0,-3%);
+			}
+		}
+	}
+/*perfection section*/
+/*reach section*/
+.reach-section__blocks {
+	&>div {
+		width: 100%;
+	}
+} 
+/*reach section*/ 
+}
+@media (max-width: 575px) {
+	/*header section*/
+	.header-section {
+		.navbar {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.header-section__carousel-wrap {
+		min-height: 300px;
+	}
+	.header-section__carousel {
+		margin-top: 30px;
+		.owl-nav {
+			img {
+				width: 60%;
+			}
+			.owl-next {
+				top: 25%;
+			}
+			.owl-prev {
+				top: 25%;
+			}
+		}
+	}
+	/*header section*/ 
+	/*menu section*/
+	.menu-section {
+		padding: 30px 0 80px 0;
+	}
+	.menu-section__caption {
+		h1 {
+			font-size: 28px;
+		}
+	}
+	.menu-section__card {
+		margin: 10px 0;
+	}
+	.menu-section__card-title {
+		padding: 30px 15px 25px 15px;
+		h2 {
+			margin-bottom: 20px;
+			font-size: 25px;
+		}
+	}
+	.menu-section__card-description {
+		padding: 30px 15px 25px 15px;
+	}
+	.menu-section__card-price {
+		padding: 25px 15px;
+	}
+	/*menu section*/ 
+	/*details section*/
+	.details-section {
+		.card {
+			.card-body {
+				.btn {
+					font-size: 13px;
+				}
+			}
+		}
+	} 
+	/*details section*/ 
+}

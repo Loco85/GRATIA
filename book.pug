@@ -1,0 +1,86 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="urf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=none")
+		title Book a table | Gratia
+		link(href="css/bootstrap.min.css", rel="stylesheet")
+		link(href="css/animate.min.css", rel="stylesheet")
+		link(rel="stylesheet", href="css/hamburgers.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/owl.theme.default.min.css")
+	body
+		section.header-section <!-- header section -->
+			nav.navbar.navbar-expand-lg.navbar-light
+				div.col-12.d-flex.flex-lg-row.flex-column.justify-content-between
+					div.d-flex.d-block.flex-row.justify-content-between
+						a.navbar-brand(href="#")
+							img.img-fluid(src="img/logo.png", alt="")
+						button.hamburger.hamburger--collapse.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+							div.hamburger-box
+								span.hamburger-inner
+					div.collapse.navbar-collapse#navbarNav.align-self-center
+						div.navbar-nav.ml-auto
+							a.nav-item.nav-link(href="#") About
+							a.nav-item.nav-link.active(href="#") Menu
+							a.nav-item.nav-link(href="#") Gallery
+							a.nav-item.nav-link(href="#") Contact
+		section.book-table-section
+			div.container
+				div.col.book-table-section__caption
+					h1 Book a table
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				div.col-12.book-table-section__form
+					form(action="")
+						div.row
+							div.col-lg-6
+								div.row
+									div.form-group.col-lg-4
+										input.form-control.text-center(type="text", required, placeholder="dd")
+									div.form-group.col-lg-4
+										input.form-control.text-center(type="text", required, placeholder="mm")
+									div.form-group.col-lg-4
+										input.form-control.text-center(type="text", required, placeholder="yyyy")
+									div.form-group.col-12
+										input.form-control(type="text", required, placeholder="first name and last name")
+									div.form-group.col-12
+										input.form-control(type="email", required, placeholder="e-mail")
+							div.col-lg-6
+								div.row
+									div.form-group.col-lg-6
+										input.form-control.text-center(type="text", required, placeholder="hour")
+									div.form-group.col-lg-6
+										input.form-control.text-center(type="text", required, placeholder="number of people")
+									div.form-group.col-12
+										input.form-control(type="tel", required, placeholder="phone number")
+									div.form-group.col-12
+										select.form-control(name="", required)
+											option(value="1", selected="selected") Prepare menu 1
+											option(value="2") Prepare menu 2
+											option(value="3") Prepare menu 3
+							div.col-12
+								div.form-group
+									textarea.form-control(name="", cols="30", rows="5", required, placeholder="Your message...")
+								div.form-group
+									button.btn.btn-secondary.btn-block(type="submit") Send
+
+		section.footer-section
+			div.footer-section__fork
+			div.footer-section__caption
+				h6 Gratia Restaurant
+				p Copyright 2016. All rights reserved by symu
+			div.footer-section__social-icons.d-flex.justify-content-center
+				div
+					a(href="#")
+						img(src="img/facebook-icon.png", alt="")
+				div
+					a(href="#")
+						img(src="img/twitter-icon.png", alt="")
+				div
+					a(href="#")
+						img(src="img/instagram-icon.png", alt="")
+							
+		script(type="text/javascript", src="js/jquery.min.js")
+		script(type="text/javascript", src="js/bootstrap.min.js")
+		script(type="text/javascript", src="js/owl.carousel.min.js")
+
